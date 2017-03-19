@@ -1,0 +1,64 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fragmentInit"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:padding="0dp"
+    android:layout_marginTop="0px"
+    android:layout_marginLeft="0px"
+    android:layout_marginRight="0px"
+    android:background="#549F07"
+    >
+
+
+    <SeekBar
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/timerSeekBar"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:indeterminate="false"
+        tools:layout_editor_absoluteY="0dp"
+        tools:layout_editor_absoluteX="0dp"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/imageView"
+        android:layout_below="@+id/timerSeekBar"
+        android:layout_alignParentStart="true"
+        android:src="@drawable/egg"
+        tools:layout_editor_absoluteY="0dp"
+        tools:layout_editor_absoluteX="0dp"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0:30"
+        android:id="@+id/timerTextView"
+        android:layout_alignBottom="@+id/imageView"
+        android:layout_centerHorizontal="true"
+        android:textSize="70sp"
+        tools:layout_editor_absoluteY="0dp"
+        tools:layout_editor_absoluteX="0dp"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/controllerButton"
+        android:layout_width="99dp"
+        android:layout_height="58dp"
+        android:onClick="controlTimer"
+        android:text="Go!"
+        android:visibility="visible"
+        tools:layout_editor_absoluteX="130dp"
+        tools:layout_editor_absoluteY="230dp"
+        tools:ignore="MissingConstraints"
+        android:layout_marginLeft="?attr/actionBarSize"
+        android:layout_marginRight="?attr/actionBarSize"
+        android:layout_marginBottom="50dp"
+        android:layout_above="@+id/timerTextView"
+        android:layout_centerHorizontal="true" />
+
+        </RelativeLayout>
